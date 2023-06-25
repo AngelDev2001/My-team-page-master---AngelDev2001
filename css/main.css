@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=PT+Serif:wght@400;700&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  --color-gray-light: #a9a9a9;
+  --font-Montserrat: "Montserrat", sans-serif;
+  --font-Poppins: "Poppins", sans-serif;
+  --font-PTSerif: "PT Serif", serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-Poppins);
+}
+
+.container {
+  width: 100%;
+}
+
+.content {
+  width: 70%;
+  margin: 0 auto;
+  padding: 3rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__title {
+  font-size: 36px;
+  font-family: var(--font-PTSerif);
+}
+
+.header__description {
+  width: 439px;
+}
+
+.header__description-title {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.header__description-paragraph {
+  font-size: 18px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-container__member {
+  width: 250px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.main-container__member:nth-child(2),
+.main-container__member:nth-child(5) {
+  margin-top: 6rem;
+}
+
+.main-container__image img {
+  width: 100%;
+}
+
+.main-container__name {
+  height: 2rem;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+}
+
+.main-container__profession {
+  position: absolute;
+  transform: rotate(90deg);
+  transform-origin: 5% 84%;
+  text-transform: uppercase;
+  font-family: var(--font-PTSerif);
+  font-size: 12px;
+  width: 100%;
+  top: 0;
+  left: 100%;
+}
+
+.footer {
+  color: var(--color-gray-light);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 992px) {
+  .content {
+    width: 90%;
+  }
+
+  .main-container__member:nth-child(2),
+  .main-container__member:nth-child(5) {
+    margin-top: 0;
+  }
+
+  .main-container__member:nth-child(even) {
+    margin-top: 4rem;
+  }
+
+  .main-container__member {
+    width: 220px;
+    height: 380px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header__container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .header__description {
+    width: 90%;
+  }
+
+  .main-container__name,
+  .header__description-paragraph {
+    font-size: 14px;
+  }
+
+  .main-container__profession {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .main-container__member {
+    width: 140px;
+    height: 300px;
+  }
+}
