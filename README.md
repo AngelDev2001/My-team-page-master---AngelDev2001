@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{My team page master}</h1>
+<h1 align="center">My team page master</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -30,7 +30,7 @@
 ![Screenshot - phone](./images/Screenshot-phone.png)
 
 - Where can I see your demo?
-[DEMO]()
+[DEMO](https://angeldev2001.github.io/My-team-page-master---AngelDev2001/)
 
 ### Built With
 
